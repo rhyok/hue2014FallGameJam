@@ -7,6 +7,8 @@ public class Chocolate : MonoBehaviour {
     private float cooldown;
     private Vector2 location;
 
+    public float RotateSpeed = 0.9f;
+
 	// Use this for initialization
 	void Start () {
         isBeingHeld = false;
@@ -14,7 +16,7 @@ public class Chocolate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    this.gameObject.transform.Rotate(Vector3.forward, RotateSpeed);
 	}
 
     void OnTriggerEnter(Collider col)

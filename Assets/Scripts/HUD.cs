@@ -103,6 +103,7 @@ public class HUD : MonoBehaviour {
                             PORTRAIT_WIDTH*guiWidth,
                             TEXT_HEIGHT*guiHeight
                         );
+
         //Debug.Log("Info: L: " + p1PortraitRect.xMin + " T: " + p1PortraitRect.yMin + " W: " + p1PortraitRect.width + " H: " + p1PortraitRect.height); 
 
         GUI.DrawTexture(p1PortraitRect, p1PortraitTexture, ScaleMode.ScaleToFit);
