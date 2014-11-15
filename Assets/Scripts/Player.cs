@@ -38,7 +38,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(currentChargeTime);
+        //Debug.Log(currentChargeTime);
         currentChargeCooldown -= Time.deltaTime;
 
         if (!isCharging)

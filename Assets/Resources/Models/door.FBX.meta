@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 320a316c4722b3f4a83e5b3a1b780366
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door_frame
+    100004: Door_frame 1
+    100006: Door_handle
+    100008: Door_handle 1
+    100010: Door_pad
+    100012: Door_pad 1
+    100014: Frame_frame
+    100016: Frame_frame 1
+    100018: Frame_glass
+    100020: Frame_glass 1
+    100022: Frame_peg
+    100024: Frame_peg 1
+    100026: Mesh
+    100028: Sign_frame
+    100030: Sign_sign
+    100032: ThinWallFrameSide
+    100034: ThinWallFrameSide 1
+    100036: ThinWallFrameTopShort
+    400000: //RootNode
+    400002: Door_frame
+    400004: Door_frame 1
+    400006: Door_handle
+    400008: Door_handle 1
+    400010: Door_pad
+    400012: Door_pad 1
+    400014: Frame_frame
+    400016: Frame_frame 1
+    400018: Frame_glass
+    400020: Frame_glass 1
+    400022: Frame_peg
+    400024: Frame_peg 1
+    400026: Mesh
+    400028: Sign_frame
+    400030: Sign_sign
+    400032: ThinWallFrameSide
+    400034: ThinWallFrameSide 1
+    400036: ThinWallFrameTopShort
+    2300000: Door_frame
+    2300002: Door_frame 1
+    2300004: Door_handle
+    2300006: Door_handle 1
+    2300008: Door_pad
+    2300010: Door_pad 1
+    2300012: Frame_frame
+    2300014: Frame_frame 1
+    2300016: Frame_glass
+    2300018: Frame_glass 1
+    2300020: Frame_peg
+    2300022: Frame_peg 1
+    2300024: Mesh
+    2300026: Sign_frame
+    2300028: Sign_sign
+    2300030: ThinWallFrameSide
+    2300032: ThinWallFrameSide 1
+    2300034: ThinWallFrameTopShort
+    3300000: Door_frame
+    3300002: Door_frame 1
+    3300004: Door_handle
+    3300006: Door_handle 1
+    3300008: Door_pad
+    3300010: Door_pad 1
+    3300012: Frame_frame
+    3300014: Frame_frame 1
+    3300016: Frame_glass
+    3300018: Frame_glass 1
+    3300020: Frame_peg
+    3300022: Frame_peg 1
+    3300024: Mesh
+    3300026: Sign_frame
+    3300028: Sign_sign
+    3300030: ThinWallFrameSide
+    3300032: ThinWallFrameSide 1
+    3300034: ThinWallFrameTopShort
+    4300000: Frame_frame
+    4300002: Frame_glass
+    4300004: Frame_peg
+    4300006: ThinWallFrameSide
+    4300008: ThinWallFrameSide
+    4300010: ThinWallFrameTopShort
+    4300012: Door_frame
+    4300014: Door_handle
+    4300016: Door_pad
+    4300018: Sign_sign
+    4300020: Sign_frame
+    4300022: Mesh
+    4300024: Frame_frame
+    4300026: Frame_glass
+    4300028: Frame_peg
+    4300030: Door_frame
+    4300032: Door_handle
+    4300034: Door_pad
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

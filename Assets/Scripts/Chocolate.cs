@@ -9,6 +9,9 @@ public class Chocolate : MonoBehaviour {
 
     public float RotateSpeed = 0.9f;
 
+    public int locationId;
+    public ItemSpawner itemSp;
+
 	// Use this for initialization
 	void Start () {
         isBeingHeld = false;
@@ -24,6 +27,14 @@ public class Chocolate : MonoBehaviour {
         if (col.collider.tag == "Player")
         {
             isBeingHeld = true;
+        }
+    }
+
+    void OnDestroy()
+    {
+        if(itemSp != null)
+        {
+            itemSp.RemoveItemAtLocation(this.gameObject, locationId);
         }
     }
 

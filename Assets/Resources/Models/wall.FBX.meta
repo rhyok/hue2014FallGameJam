@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 646b46d4c8c79be42b1ffdbaf2ad5e39
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: DoorWallFrame
+    100002: Duplicates
+    100004: Frame
+    100006: Frame 1
+    100008: Frame 2
+    100010: Frame 3
+    100012: Frame_frame
+    100014: Frame_frame 1
+    100016: Frame_frame 2
+    100018: Frame_frame 3
+    100020: Frame_glass
+    100022: Frame_glass 1
+    100024: Frame_glass 2
+    100026: Frame_glass 3
+    100028: Frame_peg
+    100030: Frame_peg 1
+    100032: Frame_peg 2
+    100034: Frame_peg 3
+    100036: FrameLarge
+    100038: FrameLarge 1
+    100040: FrameLarge 2
+    100042: FrameLarge_frame
+    100044: FrameLarge_frame 1
+    100046: FrameLarge_frame 2
+    100048: FrameLarge_frame 3
+    100050: FrameLarge_glass
+    100052: FrameLarge_glass 1
+    100054: FrameLarge_glass 2
+    100056: FrameLarge_glass 3
+    100058: FrameLarge_peg
+    100060: FrameLarge_peg 1
+    100062: FrameLarge_peg 2
+    100064: FrameLarge_peg 3
+    100066: Mesh
+    100068: temp
+    100070: ThinWallFrameSide
+    100072: ThinWallFrameSide 1
+    100074: ThinWallFrameTopLong
+    100076: //RootNode
+    400000: DoorWallFrame
+    400002: Duplicates
+    400004: Frame
+    400006: Frame 1
+    400008: Frame 2
+    400010: Frame 3
+    400012: Frame_frame
+    400014: Frame_frame 1
+    400016: Frame_frame 2
+    400018: Frame_frame 3
+    400020: Frame_glass
+    400022: Frame_glass 1
+    400024: Frame_glass 2
+    400026: Frame_glass 3
+    400028: Frame_peg
+    400030: Frame_peg 1
+    400032: Frame_peg 2
+    400034: Frame_peg 3
+    400036: FrameLarge
+    400038: FrameLarge 1
+    400040: FrameLarge 2
+    400042: FrameLarge_frame
+    400044: FrameLarge_frame 1
+    400046: FrameLarge_frame 2
+    400048: FrameLarge_frame 3
+    400050: FrameLarge_glass
+    400052: FrameLarge_glass 1
+    400054: FrameLarge_glass 2
+    400056: FrameLarge_glass 3
+    400058: FrameLarge_peg
+    400060: FrameLarge_peg 1
+    400062: FrameLarge_peg 2
+    400064: FrameLarge_peg 3
+    400066: Mesh
+    400068: temp
+    400070: ThinWallFrameSide
+    400072: ThinWallFrameSide 1
+    400074: ThinWallFrameTopLong
+    400076: //RootNode
+    2300000: Frame_frame
+    2300002: Frame_frame 1
+    2300004: Frame_frame 2
+    2300006: Frame_frame 3
+    2300008: Frame_glass
+    2300010: Frame_glass 1
+    2300012: Frame_glass 2
+    2300014: Frame_glass 3
+    2300016: Frame_peg
+    2300018: Frame_peg 1
+    2300020: Frame_peg 2
+    2300022: Frame_peg 3
+    2300024: FrameLarge_frame
+    2300026: FrameLarge_frame 1
+    2300028: FrameLarge_frame 2
+    2300030: FrameLarge_frame 3
+    2300032: FrameLarge_glass
+    2300034: FrameLarge_glass 1
+    2300036: FrameLarge_glass 2
+    2300038: FrameLarge_glass 3
+    2300040: FrameLarge_peg
+    2300042: FrameLarge_peg 1
+    2300044: FrameLarge_peg 2
+    2300046: FrameLarge_peg 3
+    2300048: Mesh
+    2300050: ThinWallFrameSide
+    2300052: ThinWallFrameSide 1
+    2300054: ThinWallFrameTopLong
+    3300000: Frame_frame
+    3300002: Frame_frame 1
+    3300004: Frame_frame 2
+    3300006: Frame_frame 3
+    3300008: Frame_glass
+    3300010: Frame_glass 1
+    3300012: Frame_glass 2
+    3300014: Frame_glass 3
+    3300016: Frame_peg
+    3300018: Frame_peg 1
+    3300020: Frame_peg 2
+    3300022: Frame_peg 3
+    3300024: FrameLarge_frame
+    3300026: FrameLarge_frame 1
+    3300028: FrameLarge_frame 2
+    3300030: FrameLarge_frame 3
+    3300032: FrameLarge_glass
+    3300034: FrameLarge_glass 1
+    3300036: FrameLarge_glass 2
+    3300038: FrameLarge_glass 3
+    3300040: FrameLarge_peg
+    3300042: FrameLarge_peg 1
+    3300044: FrameLarge_peg 2
+    3300046: FrameLarge_peg 3
+    3300048: Mesh
+    3300050: ThinWallFrameSide
+    3300052: ThinWallFrameSide 1
+    3300054: ThinWallFrameTopLong
+    4300000: Mesh
+    4300002: FrameLarge_peg
+    4300004: FrameLarge_glass
+    4300006: FrameLarge_frame
+    4300008: FrameLarge_peg
+    4300010: FrameLarge_glass
+    4300012: FrameLarge_frame
+    4300014: FrameLarge_peg
+    4300016: FrameLarge_glass
+    4300018: FrameLarge_frame
+    4300020: Frame_peg
+    4300022: Frame_glass
+    4300024: Frame_frame
+    4300026: Frame_peg
+    4300028: Frame_glass
+    4300030: Frame_frame
+    4300032: Frame_peg
+    4300034: Frame_glass
+    4300036: Frame_frame
+    4300038: Frame_peg
+    4300040: Frame_glass
+    4300042: Frame_frame
+    4300044: ThinWallFrameTopLong
+    4300046: ThinWallFrameSide
+    4300048: ThinWallFrameSide
+    4300050: FrameLarge_frame
+    4300052: FrameLarge_glass
+    4300054: FrameLarge_peg
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
