@@ -8,11 +8,12 @@ public class Player : MonoBehaviour {
     private float acceleration;
     private float accelerationMultiplier;
     private float maxSpeed;
+    private Vector3 moveDir;
 
 	// Use this for initialization
 	void Start () {
-        velocity = 10.0f;
-        maxSpeed = 10.0f;
+        velocity = 500.0f;
+        maxSpeed = 50.0f;
         acceleration = 0.0f;
         accelerationMultiplier = 0.5f;
         hasChocolate = false;
@@ -21,36 +22,41 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Debug.Log(hasChocolate);
+
+        moveDir = Vector3.zero;
+
         if (Input.GetKey(KeyCode.W))
         {
-            this.gameObject.transform.Translate(-Vector3.forward * velocity * Time.deltaTime);
+            moveDir += Vector3.forward;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            this.gameObject.transform.Translate(-Vector3.left * velocity * Time.deltaTime);
+            moveDir += Vector3.left;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            this.gameObject.transform.Translate(Vector3.forward * velocity * Time.deltaTime);
+            moveDir += Vector3.back;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            this.gameObject.transform.Translate(-Vector3.right * velocity * Time.deltaTime);
+            moveDir += Vector3.right;
         }
+
+        this.gameObject.rigidbody.velocity = moveDir * velocity * Time.deltaTime;
 	}
 
     void OnTriggerEnter(Collider col)
     {
-        string tag = col.collider.tag;
-        if (tag == "Chocolate")
+        string name = col.collider.name;
+        if (name == "Chocolate")
         {
             hasChocolate = true;
             Destroy(col.gameObject);
         }
-        else if (tag == "Senpai")
+        else if (name == "Senpai")
         {
             hasChocolate = false;
         }
