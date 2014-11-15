@@ -102,13 +102,13 @@ public class Player : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        string name = col.collider.name;
-        if (name == "Chocolate")
+        string tag = col.collider.tag;
+        if (tag == "Chocolate")
         {
             hasChocolate = true;
             Destroy(col.gameObject);
         }
-        else if (name == "Senpai" && hasChocolate)
+        else if (tag == "Senpai" && hasChocolate)
         {
             hasChocolate = false;
             score++;
