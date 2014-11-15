@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(hasChocolate);
+        //Debug.Log(hasChocolate);
 
         moveDir = Vector3.zero;
 
