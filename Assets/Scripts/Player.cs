@@ -50,9 +50,15 @@ public class Player : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.collider.tag == "Chocolate")
+        string tag = col.collider.tag;
+        if (tag == "Chocolate")
         {
             hasChocolate = true;
+            Destroy(col.gameObject);
+        }
+        else if (tag == "Senpai")
+        {
+            hasChocolate = false;
         }
     }
 }
