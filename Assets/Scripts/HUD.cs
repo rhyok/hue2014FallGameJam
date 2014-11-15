@@ -53,7 +53,6 @@ public class HUD : MonoBehaviour {
         float guiY = .85f * Camera.current.pixelHeight;
         float guiWidth = Camera.current.pixelWidth;
         float guiHeight = Camera.current.pixelHeight - guiY;
-        Debug.Log("Info: " + guiX + " " + guiY + " " + guiWidth + " " + guiHeight); 
         
         p1PortraitRect  = new Rect(
                             guiX + P1_X*guiWidth, 
@@ -103,7 +102,6 @@ public class HUD : MonoBehaviour {
                             PORTRAIT_WIDTH*guiWidth,
                             TEXT_HEIGHT*guiHeight
                         );
-        Debug.Log("Info: L: " + p1PortraitRect.xMin + " T: " + p1PortraitRect.yMin + " W: " + p1PortraitRect.width + " H: " + p1PortraitRect.height); 
 
         GUI.DrawTexture(p1PortraitRect, p1PortraitTexture, ScaleMode.ScaleToFit);
         GUI.DrawTexture(p2PortraitRect, p2PortraitTexture, ScaleMode.ScaleToFit);
