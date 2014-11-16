@@ -42,10 +42,10 @@ public class HUD : MonoBehaviour {
         p2PortraitRect = new Rect(0, 0, 0, 0);
         p3PortraitRect = new Rect(0, 0, 0, 0);
         p4PortraitRect = new Rect(0, 0, 0, 0);
-        p1PortraitTexture = Resources.Load<Texture2D>("Portraits/player1");
-        p2PortraitTexture = Resources.Load<Texture2D>("Portraits/player2");
-        p3PortraitTexture = Resources.Load<Texture2D>("Portraits/player3");
-        p4PortraitTexture = Resources.Load<Texture2D>("Portraits/player4");
+        p1PortraitTexture = Resources.Load<Texture2D>("Portraits/gamejim1");
+        p2PortraitTexture = Resources.Load<Texture2D>("Portraits/gamejim3");
+        p3PortraitTexture = Resources.Load<Texture2D>("Portraits/gamejim4");
+        p4PortraitTexture = Resources.Load<Texture2D>("Portraits/gamejim2");
     }
 	void OnGUI()
     {

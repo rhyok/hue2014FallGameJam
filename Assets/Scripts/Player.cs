@@ -192,6 +192,7 @@ public class Player : MonoBehaviour {
         else if (tag == "Ghost")
         {
             isGhosting = true;
+            Destroy(col.gameObject);
             foreach(GameObject desk in GameObject.FindGameObjectsWithTag("Desk")) {
                 Physics.IgnoreCollision(this.collider, desk.collider, true);
             }
