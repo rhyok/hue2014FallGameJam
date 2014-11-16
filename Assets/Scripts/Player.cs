@@ -14,13 +14,13 @@ public class Player : MonoBehaviour {
     private bool hasChocolate;
     private int noChocolatesHeld;
 
-    private float acceleration;
-    private float accelerationMultiplier;
     private float maxSpeed;
     private Vector3 moveDir;
 
     private bool isCharging;
     private bool hasToast;
+    private bool isGhosting;
+    private float spookyTime;
 
     private float currentChargeCooldown;
 
@@ -37,8 +37,6 @@ public class Player : MonoBehaviour {
         chargeCooldown = 5.0f;
         currentChargeCooldown = 5.0f;
         maxSpeed = 50.0f;
-        acceleration = 0.0f;
-        accelerationMultiplier = 0.5f;
         score = 0;
         toastTime = 5.0f; //seconds
         scoreMultiplier = 1;
@@ -46,13 +44,27 @@ public class Player : MonoBehaviour {
         noChocolatesHeld = 0;
         isCharging = false;
         hasToast = false;
+        isGhosting = false;
+        spookyTime = 10.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         //Debug.Log(currentChargeTime);
         currentChargeCooldown -= Time.deltaTime;
-
+        if (isGhosting)
+        {
+            spookyTime -= Time.deltaTime;
+            if (spookyTime <= 0)
+            {
+                isGhosting = false;
+                spookyTime = 10.0f;
+                foreach (GameObject desk in GameObject.FindGameObjectsWithTag("Desk"))
+                {
+                    Physics.IgnoreCollision(this.collider, desk.collider, false);
+                }
+            }
+        }
         if (!isCharging)
         {
             moveDir = Vector3.zero;
@@ -80,16 +92,19 @@ public class Player : MonoBehaviour {
 
         if (hasToast)
         {
+            Debug.Log("HAS TOAST");
             toastTime -= Time.deltaTime;
             if (toastTime <= 0.0f)
             {
+                Debug.Log("NO TOAST");
                 hasToast = false;
+                toastTime = 5.0f;
             }
 
             this.gameObject.rigidbody.velocity = moveDir * toastVelocity * Time.deltaTime;
         }
 
-        if (isCharging)
+        else if (isCharging)
         {
             currentChargeTime -= Time.deltaTime;
 
@@ -146,6 +161,14 @@ public class Player : MonoBehaviour {
         else if (tag == "Toast")
         {
             hasToast = true;
+            Destroy(col.gameObject);
+        }
+        else if (tag == "Ghost")
+        {
+            isGhosting = true;
+            foreach(GameObject desk in GameObject.FindGameObjectsWithTag("Desk")) {
+                Physics.IgnoreCollision(this.collider, desk.collider, true);
+            }
         }
     }
 }
