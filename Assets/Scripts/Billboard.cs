@@ -9,6 +9,6 @@ public class Billboard : MonoBehaviour {
         euler.x += 0f;
         euler.y = 0f;
         faceCamera.eulerAngles = euler;
-        transform.rotation = faceCamera;
+        this.gameObject.renderer.transform.rotation = faceCamera;
 	}
 }

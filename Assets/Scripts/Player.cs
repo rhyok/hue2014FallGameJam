@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        velocity = 500.0f;
+        velocity = 50.0f;
         toastVelocity = 750.0f;
         chargeVelocity = 2000.0f;
         chargeTime = 0.25f;
@@ -75,27 +75,6 @@ public class Player : MonoBehaviour {
         }
 
 
-        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
-        { 
-            animator.Play("Idle");
-        }
-
-        if(Input.GetKeyDown(KeyCode.W))
-        {
-            animator.Play("Walk Up");
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            animator.Play("Walk Down");
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            animator.Play("Walk Left");
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            animator.Play("Walk Right");
-        }
         if (Input.GetKey(KeyCode.W))
         {
             moveDir += Vector3.forward;
