@@ -4,25 +4,33 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
     private float velocity;
+    private float toastVelocity;
     private float chargeVelocity;
+    private float toastTime;
     private float chargeTime;
     private float currentChargeTime;
     private float chargeCooldown;
+
     private bool hasChocolate;
+    private int noChocolatesHeld;
+
     private float acceleration;
     private float accelerationMultiplier;
     private float maxSpeed;
     private Vector3 moveDir;
 
     private bool isCharging;
+    private bool hasToast;
 
     private float currentChargeCooldown;
 
     private int score;
+    private int scoreMultiplier;
 
 	// Use this for initialization
 	void Start () {
         velocity = 500.0f;
+        toastVelocity = 750.0f;
         chargeVelocity = 2000.0f;
         chargeTime = 0.25f;
         currentChargeTime = chargeTime;
@@ -32,8 +40,12 @@ public class Player : MonoBehaviour {
         acceleration = 0.0f;
         accelerationMultiplier = 0.5f;
         score = 0;
+        toastTime = 5.0f; //seconds
+        scoreMultiplier = 1;
         hasChocolate = false;
+        noChocolatesHeld = 0;
         isCharging = false;
+        hasToast = false;
 	}
 	
 	// Update is called once per frame
@@ -64,6 +76,17 @@ public class Player : MonoBehaviour {
         if (Input.GetKey(KeyCode.D))
         {
             moveDir += Vector3.right;
+        }
+
+        if (hasToast)
+        {
+            toastTime -= Time.deltaTime;
+            if (toastTime <= 0.0f)
+            {
+                hasToast = false;
+            }
+
+            this.gameObject.rigidbody.velocity = moveDir * toastVelocity * Time.deltaTime;
         }
 
         if (isCharging)
@@ -106,13 +129,23 @@ public class Player : MonoBehaviour {
         if (tag == "Chocolate")
         {
             hasChocolate = true;
+            noChocolatesHeld++;
+            Debug.Log("has " + noChocolatesHeld);
+            scoreMultiplier++;
             Destroy(col.gameObject);
         }
         else if (tag == "Senpai" && hasChocolate)
         {
             hasChocolate = false;
-            score++;
+            score += noChocolatesHeld * scoreMultiplier;
+            Debug.Log("score: " + score);
+            noChocolatesHeld = 0;
+            scoreMultiplier = 1;
             Debug.Log(this.name + " has been noticed!");
+        }
+        else if (tag == "Toast")
+        {
+            hasToast = true;
         }
     }
 }
