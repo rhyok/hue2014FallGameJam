@@ -27,6 +27,9 @@ public class Player : MonoBehaviour {
     private int score;
     private int scoreMultiplier;
 
+    private Animator animator;
+    private string player = "player0";
+
 	// Use this for initialization
 	void Start () {
         velocity = 500.0f;
@@ -46,6 +49,7 @@ public class Player : MonoBehaviour {
         hasToast = false;
         isGhosting = false;
         spookyTime = 10.0f;
+        animator = this.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -70,6 +74,28 @@ public class Player : MonoBehaviour {
             moveDir = Vector3.zero;
         }
 
+
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        { 
+            animator.Play("Idle");
+        }
+
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            animator.Play("Walk Up");
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            animator.Play("Walk Down");
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            animator.Play("Walk Left");
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            animator.Play("Walk Right");
+        }
         if (Input.GetKey(KeyCode.W))
         {
             moveDir += Vector3.forward;
